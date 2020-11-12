@@ -1,65 +1,62 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Header from "../component/Header";
+import React from "react";
+import { Helmet } from 'react-helmet'
+import About_Intro from "../component/about/Intro";
+import Counter from "../component/about/counts";
+import WhyMentor from "../component/about/WhyMentor";
+import Features from "../component/about/Features";
+import PopularCourses from "../component/courses/Popular";
+import TopTrainers from "../component/trainers/TopTrainers";
+import Footer from "../component/footer";
 
-export default function Home() {
+const Home = (props) => {
+
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <div className="d-flex flex-column">
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+          <Helmet>
+              <script src="../styles/aos/aos.js" type="text/javascript"/>
+          </Helmet>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <Header/>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          {/* <!-- ======= Hero Section ======= -->*/}
+          <section>
+              <div id="hero" className="d-flex flex-row align-items-center justify-content-center">
+                  <div className="container position-relative" data-aos-delay="100">
+                      <h1>Learning Today, <br/>Leading Tomorrow</h1>
+                      <h2>we offer state of the art courses at affordable price</h2>
+                      <a href="courses" className="btn-get-started">Get Started</a>
+                  </div>
+              </div>
+          </section>
+          {/* <!-- End Hero -->*/}
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          <main id="main">
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+              {/*About start*/}
+              <About_Intro/>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+              <Counter/>
+
+              <WhyMentor/>
+
+              <Features/>
+              {/*About End*/}
+
+              {/*Courses Start*/}
+              <PopularCourses/>
+              {/*Courses End*/}
+
+              {/*Trainers Start*/}
+              <TopTrainers/>
+          </main>
+
+          <Footer/>
+      </div>
   )
 }
+
+
+export default Home;
