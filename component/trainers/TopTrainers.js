@@ -24,10 +24,10 @@ const TopTrainers = (props) => {
                                             perspiciatis quaerat qui aut aut aut
                                         </p>
                                         <div className="social">
-                                            <a href=""><i className="icofont-twitter"></i></a>
-                                            <a href=""><i className="icofont-facebook"></i></a>
-                                            <a href=""><i className="icofont-instagram"></i></a>
-                                            <a href=""><i className="icofont-linkedin"></i></a>
+                                            <a href=""><i className="icofont-twitter"/></a>
+                                            <a href=""><i className="icofont-facebook"/></a>
+                                            <a href=""><i className="icofont-instagram"/></a>
+                                            <a href=""><i className="icofont-linkedin"/></a>
                                         </div>
                                     </div>
                             </div>
@@ -44,10 +44,10 @@ const TopTrainers = (props) => {
                                             architecto rerum rerum temporibus
                                         </p>
                                         <div className="social">
-                                            <a href=""><i className="icofont-twitter"></i></a>
-                                            <a href=""><i className="icofont-facebook"></i></a>
-                                            <a href=""><i className="icofont-instagram"></i></a>
-                                            <a href=""><i className="icofont-linkedin"></i></a>
+                                            <a href=""><i className="icofont-twitter"/></a>
+                                            <a href=""><i className="icofont-facebook"/></a>
+                                            <a href=""><i className="icofont-instagram"/></a>
+                                            <a href=""><i className="icofont-linkedin"/></a>
                                         </div>
                                     </div>
                             </div>
@@ -64,10 +64,10 @@ const TopTrainers = (props) => {
                                             et laborum toro des clara
                                         </p>
                                         <div className="social">
-                                            <a href=""><i className="icofont-twitter"></i></a>
-                                            <a href=""><i className="icofont-facebook"></i></a>
-                                            <a href=""><i className="icofont-instagram"></i></a>
-                                            <a href=""><i className="icofont-linkedin"></i></a>
+                                            <a href=""><i className="icofont-twitter"/></a>
+                                            <a href=""><i className="icofont-facebook"/></a>
+                                            <a href=""><i className="icofont-instagram"/></a>
+                                            <a href=""><i className="icofont-linkedin"/></a>
                                         </div>
                                     </div>
                             </div>

@@ -77,8 +77,8 @@ const PopularCourses = (props) => {
                                             <img src="https://res.cloudinary.com/zalajobi/image/upload/v1605153058/Mentor/Trainers/trainer-3_dwefjs.jpg" className="img-fluid"  alt=""/> <span>Brandon</span>
                                         </div>
                                         <div className="trainer-rank d-flex align-items-center">
-                                            <i className="bx bx-user"></i>&nbsp;20 &nbsp;&nbsp;
-                                            <i className="bx bx-heart"></i>&nbsp;85
+                                            <i className="bx bx-user"/>&nbsp;20 &nbsp;&nbsp;
+                                            <i className="bx bx-heart"/>&nbsp;85
                                         </div>
                                     </div>
                                 </div>

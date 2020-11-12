@@ -1,15 +1,10 @@
 import React from 'react';
-import { appendScript } from '../util/appendScript'
 import Head from "next/head";
 
 const Header = (props) => {
     return (
         <React.Fragment>
-            <Head>
-                <title>Mento - Buy Courses</title>
-                {/*<script type="text/javascript" src="../public/static/js/counterup.min.js"/>*/}
-                {/*<script type="text/javascript" src="../styles/aos/aos.js"/>*/}
-            </Head>
+
             <header id="header" className="fixed-top">
                 <div className="container d-flex align-items-center">
 
@@ -32,6 +27,17 @@ const Header = (props) => {
                     <a href="courses" className="get-started-btn">Get Started</a>
                 </div>
             </header>
+
+            <Head>
+                <script type="text/javascript" src="static/js/aos.js"/>
+                <script type="text/javascript" src="/static/js/counterup.min.js"/>
+                <script type="text/javascript" src="/static/js/jquery.easing.min.js"/>
+                <script type="text/javascript" src="/static/js/jquery.min.js"/>
+                <script type="text/javascript" src="/static/js/jquery.waypoints.min.js"/>
+                <script type="text/javascript" src="/static/js/owl.carousel.js"/>
+                <script type="text/javascript" src="/static/js/owl.carousel.min.js"/>
+                <script type="text/javascript" src="/static/js/validate.js"/>
+            </Head>
         </React.Fragment>
     )
 }

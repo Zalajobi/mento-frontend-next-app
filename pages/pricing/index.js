@@ -1,9 +1,9 @@
 import React from "react";
 import Header from "../../component/Header";
-import ContactUs from "../../component/contact/ContactUs";
+import PricingList from "../../component/pricing/Pricing";
 import Footer from "../../component/footer";
 
-const Contact = (props) => {
+const Pricing = (props) => {
     return (
         <div>
             <Header/>
@@ -11,12 +11,12 @@ const Contact = (props) => {
             <main id="main">
                 <div className="breadcrumbs">
                     <div className="container">
-                        <h2>Contact Us</h2>
+                        <h2>Pricing</h2>
                         <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
                     </div>
                 </div>
 
-                <ContactUs/>
+                <PricingList/>
             </main>
 
             <Footer/>
@@ -25,4 +25,4 @@ const Contact = (props) => {
 }
 
 
-export default Contact;
+export default Pricing;
